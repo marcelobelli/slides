@@ -1,508 +1,638 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Intro ao Python</title>
+        <title>Intro ao Python</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/sky.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/sky.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-markdown>
-					<textarea data-template>
-						### Curso Introdutório de Python
-						
-						ou <!-- .element: class="fragment" -->
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown>
+                    <textarea data-template>
+                        ### Curso Introdutório de Python
+                        
+                        ou <!-- .element: class="fragment" -->
 
-						Como ser feliz com Python <!-- .element: class="fragment" -->
-					</textarea>
-				</section>
-				<section>
-					<p>Olá!</p>
-					<p class="fragment">Meu nome é Marcelo <strong>Belli</strong></p>
-					<img class="fragment" style="border-radius: 50%" src="./images/selfie.jpg" height="200" width="200">
-				</section>
+                        Como ser feliz com Python <!-- .element: class="fragment" -->
+                    </textarea>
+                </section>
+                <section>
+                    <p>Olá!</p>
+                    <p class="fragment">Meu nome é Marcelo <strong>Belli</strong></p>
+                    <img class="fragment" style="border-radius: 50%" src="./images/selfie.jpg" height="200" width="200">
+                </section>
 
-				<section data-markdown>
-					<textarea data-template>
-						* Graduando em Análise e Desenvolvimento de Sistemas pelo Centro Tecnológico Positivo.
-						* Sysadmin desde 2005 implementando, sempre que possível, **Software Livre**.
-						* Em 2014 descobriu o gosto pela programação através do **Python** e desde então sente orgulho em ser um *pythonista*.
-					</textarea>					
-				</section>				
-				<section data-markdown>
-					<textarea data-template>
-						E vc?
+                <section data-markdown>
+                    <textarea data-template>
+                        * Graduando em Análise e Desenvolvimento de Sistemas pelo Centro Tecnológico Positivo.
+                        * Sysadmin desde 2005 implementando, sempre que possível, **Software Livre**.
+                        * Em 2014 descobriu o gosto pela programação através do **Python** e desde então sente orgulho em ser um *pythonista*.
+                    </textarea>					
+                </section>				
+                <section data-markdown>
+                    <textarea data-template>
+                        E vc?
 
-						Já programa? <!-- .element: class="fragment" -->
-						
-						Apresente-se :) <!-- .element: class="fragment" -->
+                        Já programa? <!-- .element: class="fragment" -->
+                        
+                        Apresente-se :) <!-- .element: class="fragment" -->
 
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						Chega de bate papo <!-- .element: class="fragment" -->
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        Chega de bate papo <!-- .element: class="fragment" -->
 
-						É hora do show! <!-- .element: class="fragment" -->
-					</textarea>
-				</section>
-				<section>
-					<img src="./images/logo_python.png" style="border: 0; box-shadow: 0 0 0px rgba(0, 0, 0, 0.15);" height="400" width="400">
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						### Wikipedia
+                        É hora do show! <!-- .element: class="fragment" -->
+                    </textarea>
+                </section>
+                <section>
+                    <img src="./images/logo_python.png" style="border: 0; box-shadow: 0 0 0px rgba(0, 0, 0, 0.15);" height="400" width="400">
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ### Wikipedia
 
-						Linguagem de programação de alto nível, interpretada, de script, imperativa, 
-						orientada a objetos, funcional, de tipagem dinâmica e forte. 
-						Foi lançada por Guido van Rossum em 1991. <!-- .element: class="fragment" -->
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						### Características
-						
-						* Propósito geral <!-- .element: class="fragment" -->
-						* Software Livre <!-- .element: class="fragment" -->
-						* Fácil de aprender e trabalhar <!-- .element: class="fragment" -->
-							* Sintaxe simples e clara <!-- .element: class="fragment" -->
-							* Baterias incluídas <!-- .element: class="fragment" -->
-						* E o principal... <!-- .element: class="fragment" -->
+                        Linguagem de programação de alto nível, interpretada, de script, imperativa, 
+                        orientada a objetos, funcional, de tipagem dinâmica e forte. 
+                        Foi lançada por Guido van Rossum em 1991. <!-- .element: class="fragment" -->
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ### Características
+                        
+                        * Propósito geral <!-- .element: class="fragment" -->
+                        * Software Livre <!-- .element: class="fragment" -->
+                        * Fácil de aprender e trabalhar <!-- .element: class="fragment" -->
+                            * Sintaxe simples e clara <!-- .element: class="fragment" -->
+                            * Baterias incluídas <!-- .element: class="fragment" -->
+                        * E o principal... <!-- .element: class="fragment" -->
 
 
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						## Comunidade nota 1000
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						Ok, now show me the CODE!
-					</textarea>
-				</section>
-				<section>
-					<h3>Hello World</h3>
-					<ul>
-						<li class="fragment">Crie um arquivo chamado <strong>hello_world.py</strong></li>
-						<li class="fragment"><code>print('Hello World!')</code></li>
-						<li class="fragment">???</li>
-					</ul>
-				</section>
-				<section>
-					<pre><code class="console" data-trim data-noescape>
-						$ python3 hello_world.py
-						Hello World!
-					</code></pre>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						## Profit!!!
-					</textarea>
-				</section>
-				<section>
-					<h3>Modo Interativo</h3>
-					<pre><code class="console" data-trim data-noescape>
-						$ python3
-						Python 3.4.3 (default, Nov 17 2016, 01:08:31)
-						[GCC 4.8.4] on linux
-						Type "help", "copyright", "credits" or "license" for more info.
-						>>>
-					</code></pre>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						### Números
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ## Comunidade nota 1000
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        Ok, now show me the CODE!
+                    </textarea>
+                </section>
+                <section>
+                    <h3>Hello World</h3>
+                    <ul>
+                        <li class="fragment">Crie um arquivo chamado <strong>hello_world.py</strong></li>
+                        <li class="fragment"><code>print('Hello World!')</code></li>
+                        <li class="fragment">???</li>
+                    </ul>
+                </section>
+                <section>
+                    <pre><code class="console" data-trim data-noescape>
+                        $ python3 hello_world.py
+                        Hello World!
+                    </code></pre>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ## Profit!!!
+                    </textarea>
+                </section>
+                <section>
+                    <h3>Modo Interativo</h3>
+                    <pre><code class="console" data-trim data-noescape>
+                        $ python3
+                        Python 3.4.3 (default, Nov 17 2016, 01:08:31)
+                        [GCC 4.8.4] on linux
+                        Type "help", "copyright", "credits" or "license" for more info.
+                        >>>
+                    </code></pre>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ### Números
 
-						* Inteiros (`int`)
-							* `35`, `42`, `100`
-						* Racionais (`float`)
-							* `3.14`, '0.021', '4.0'
-						* Complexos, Frações, Decimais
-					</textarea>
-				</section>
-				<section>
-					<section>
-						<h3>Operadores Matemáticos</h3>
-						<pre><code class="python" data-trim data-noescape>
-							>>> 2 + 2 # Soma
-							4
-							>>> 3 - 1 # Subtração
-							2
-							>>> 2 * 2 # Multiplicação
-							4
-							>>> 10 / 2 # Divisão
-							5.0 # Divisão sempre retorna um float
-							>>> 50 - 5 * 6
-							20
-							>>> (50 - 5 * 6) / 4
-							5.0
-							>>> 8 / 5
-							1.6
+                        * Inteiros (`int`)
+                            * `35`, `42`, `100`
+                        * Racionais (`float`)
+                            * `3.14`, '0.021', '4.0'
+                        * Complexos, Frações, Decimais
+                    </textarea>
+                </section>
+                <section>
+                    <section>
+                        <h3>Operadores Matemáticos</h3>
+                        <pre><code class="python" data-trim data-noescape>
+                            >>> 2 + 2 # Soma
+                            4
+                            >>> 3 - 1 # Subtração
+                            2
+                            >>> 2 * 2 # Multiplicação
+                            4
+                            >>> 10 / 2 # Divisão
+                            5.0 # Divisão sempre retorna um float
+                            >>> 50 - 5 * 6
+                            20
+                            >>> (50 - 5 * 6) / 4
+                            5.0
+                            >>> 8 / 5
+                            1.6
 
-						</code></pre>
-					</section>
-					<section>
-						<h3>Operadores Matemáticos</h3>
-						<pre><code class="python" data-trim data-noescape>
-							>>> 16 / 3
-							5.333333333333333
-							>>> 16 // 3 # Divisão inteira
-							5
-							>>> 16 % 3 # Resto da divisão
-							1
-							>>> 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2
-							1024
-							>>> 2 ** 10 # Exponenciação
-							1024
-						</code></pre>
-					</section>
-				</section>
-				<section>
-					<h3>Expressões Numéricas</h3>
-					<pre><code class="python" data-trim data-noescape>
-						>>> 50 - 5 * 6
-						20
-						>>> (50 - 5 * 6) / 4
-						5.0
-					</code></pre>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						### Outros tipos
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Operadores Matemáticos</h3>
+                        <pre><code class="python" data-trim data-noescape>
+                            >>> 16 / 3
+                            5.333333333333333
+                            >>> 16 // 3 # Divisão inteira
+                            5
+                            >>> 16 % 3 # Resto da divisão
+                            1
+                            >>> 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2
+                            1024
+                            >>> 2 ** 10 # Exponenciação
+                            1024
+                        </code></pre>
+                    </section>
+                </section>
+                <section>
+                    <h3>Expressões Numéricas</h3>
+                    <pre><code class="python" data-trim data-noescape>
+                        >>> 50 - 5 * 6
+                        20
+                        >>> (50 - 5 * 6) / 4
+                        5.0
+                    </code></pre>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ### Outros tipos
 
-						* String (`str`)
-							* `'Luffy'`, `'Marcelo Belli'`, `'42'`
-						* Booleanos (`bool`)
-							* `True`, `False`
-						* Listas (`list`)
-							* `[1, 2, 3]`
-							* `['Marcelo', 'Belli', 'Luffy']`
-							* `[1, 'Belli', 3.14, '42']`
-					</textarea>
-				</section>
-				<section>
-					<section>
-						<h3>Tipagem Dinâmica</h3>
-						<h3>&</h3>
-						<h3>Tipagem Forte</h3>
-					</section>
-					<section>
-						<h3>Tipagem Dinâmica</h3>
-						<pre><code class="python" data-trim data-noescape>
-							>>> a = 'Marcelo'
-							>>> a
-							'Marcelo'
-							>>> a = 42
-							>>> a
-							42
-						</code></pre>
-					</section>
-					<section>
-						<h3>Tipagem Forte</h3>
-						<pre><code class="python" data-trim data-noescape>
-							>>> a = '42'
-							>>> a + 42
-							Traceback (most recent call last):
-								File "<stdin>", line 1, in <module>
-							TypeError: must be str, not i
-						</code></pre>
-					</section>
-				</section>
-				<section>
-					<section data-markdown>
-						<textarea data-template>
-							### Operadores Lógicos
-							
-							Resultam em `True` ou `False`
-						</textarea>
-					</section>
-					<section data-markdown>
-						<textarea data-template>
-							### Operadores Lógicos
-	
-							| Sinal | Operador       | Exemplo   | Resultado |
-							|:-----:|:--------------:|:---------:|:---------:|
-							| <     | Menor          |`4 < 5`    | `True` <!-- .element: class="fragment" -->   | 
-							| <=    | Menor ou Igual |`5 <= 5`   | `True` <!-- .element: class="fragment" -->   |
-							| >     | Maior          |`5 > 5`    | `False` <!-- .element: class="fragment" -->  | 
-							| >=    | Maior ou Igual |`5 >= 5`   | `True`  <!-- .element: class="fragment" -->  | 
-							| ==    | Igual          |`5 == '5'` | `False` <!-- .element: class="fragment" -->  | 
-							| !=    | Diferente      |`5 != '5'` | `True`  <!-- .element: class="fragment" -->  | 
-						</textarea>
-					</section>
-					<section data-markdown>
-						<textarea data-template>
-							### Expressões Lógicas
-	
-							| Sinal | Operador | Exemplo        | Resultado |
-							|:-----:|:--------:|:--------------:|:---------:|
-							| and   | E        |`True and True` | `True` <!-- .element: class="fragment" -->   |
-							| or    | Ou       |`True or False` | `True` <!-- .element: class="fragment" -->   |
-							| not   | Negação  |`not True`      | `False` <!-- .element: class="fragment" -->  |
-						</textarea>
-					</section>
-					<section data-markdown>
-						<textarea data-template>
-							### + Exemplos
-							
-							| Exemplo           | Resultado |
-							|:-----------------:|:---------:|
-							|`6 > 7`            | `False` <!-- .element: class="fragment" -->   |
-							|`6 < 7`            | `True` <!-- .element: class="fragment" -->    |
-							|`4 != '4'`         | `True` <!-- .element: class="fragment" -->    |
-							|`4 == 4`           | `True` <!-- .element: class="fragment" -->    |
-							|`6 > 7 and 4 <= 5` | `False` <!-- .element: class="fragment" -->   |
-							|`6 > 7 or 4 <= 5`  | `True` <!-- .element: class="fragment" -->    |
-							|`not 6 > 7`        | `True` <!-- .element: class="fragment" -->    |
-						</textarea>
-					</section>
-				</section>
-				<section>
-					<section>
-						<h3>Estruturas de Controle</h3>
-						<pre><code class="python" data-trim data-noescape>
-							if condicao1:
-								comando1
-							elif condicao2:
-								comando2
-							else:
-								comando3
-						</code></pre>
-					</section>
-					<section data-markdown>
-						<textarea data-template>
-							### Estruturas de Controle
-	
-							* if <!-- .element: class="fragment" -->
-							* else <!-- .element: class="fragment" -->
-							* elif <!-- .element: class="fragment" -->		
-						</textarea>
-					</section>
-				</section>
-				<section>
-					<section data-markdown>
-						<textarea data-template>
-							### Listas
-							* `list()`ou `[]`
-								* `append()`
-								* `insert()`
-								* `pop()`
-								* `remove()`
-						</textarea>
-					</section>
-					<section>
-						<h3>Listas</h3>
-						<p>Instanciar uma lista</p>
-						<pre><code class="python" data-trim data-noescape>
-							>>> l = []
-							>>> l = list()
-							>>> l = [42, 'Marcelo']
-						</code></pre>
-					</section>
-					<section>
-						<h3>Listas</h3>
-						<p>Index</p>
-						<pre><code class="python" data-trim data-noescape>
-							>>> l = [42, 'Marcelo', 3.14, 'Monty Python']
-							>>> l[0]
-							42
-							>>> l[1]
-							'Marcelo'
-							>>> l[2]
-							3.14
-							>>> l[3]
-							'Monty Python'
-						</code></pre>
-					</section>
-					<section>
-						<h3>Listas</h3>
-						<code>append()</code>
-						<pre><code class="python" data-trim data-noescape>
-							>>> l = []
-							>>> l.append(42)
-							>>> l
-							[42]
-							>>> l.append('Monty Python')
-							>>> l
-							[42, 'Monty Python']
-						</code></pre>
-					</section>
-					<section>
-						<h3>Listas</h3>
-						<code>insert()</code>
-						<pre><code class="python" data-trim data-noescape>
-							>>> l
-							[42, 'Monty Python', 'Marcelo', '3.14']
-							>>> l.insert(1, 'Brian')
-							>>> l
-							[42, 'Brian', 'Monty Python', 'Marcelo', '3.14']
-						</code></pre>
-					</section>
-					<section>
-						<h3>Listas</h3>
-						<code>pop()</code>
-						<pre><code class="python" data-trim data-noescape>
-							>>> l
-							[42, 'Monty Python', 'Marcelo', '3.14']
-							>>> l.pop()
-							'3.14'
-							>>> l
-							[42, 'Brian', 'Monty Python', 'Marcelo']
-							>>> l.pop()
-							'Marcelo'
-							>>> l
-							[42, 'Brian', 'Monty Python']
-						</code></pre>
-					</section>
-					<section>
-						<h3>Listas</h3>
-						<code>remove()</code>
-						<pre><code class="python" data-trim data-noescape>
-							>>> l
-							[42, 'Monty Python', 'Marcelo', '3.14', 42]
-							>>> l.remove('Monty Python')
-							>>> l
-							[42, 'Marcelo', '3.14', 42]
-							>>> l.remove(42)
-							>>> l
-							['Marcelo', '3.14', 42]
-						</code></pre>
-					</section>
-				</section>
-				<section>
-					<section data-markdown>
-						<textarea data-template>
-							### Estruturas de Repetição
-	
-							`for`
-	
-							Usado quando se quer iterar sobre um bloco de código um número determinado de vezes.
-	
-						</textarea>
-					</section>
-					<section>
-						<h3>Estruturas de Repetição</h3>
-						<code>for</code>
-						<pre><code class="python" data-trim data-noescape>
-							>>> l
-							[42, 'Monty Python', 'Marcelo', '3.14']
-							>>> for item in l:
-							...     print(item)
-							...
-							42
-							Monty Python
-							Marcelo
-							3.14
-						</code></pre>
-					</section>
-					<section>
-						<h3>Estruturas de Repetição</h3>
-						<code>range()</code>
-						<pre><code class="python" data-trim data-noescape>
-							>>> for n in range(0,5):
-							...     print(n)
-							...
-							0
-							1
-							2
-							3
-							4
-						</code></pre>
-					</section>
-					<section data-markdown>
-						<textarea data-template>
-							### Estruturas de Repetição
-	
-							`while`
-	
-							Usado quando queremos que o bloco de código seja repetido até que uma condição seja satisfeita.
-	
-						</textarea>
-					</section>
-					<section>
-						<h3>Estruturas de Repetição</h3>
-						<code>while</code>
-						<pre><code class="python" data-trim data-noescape>
-							continua = True
-							
-							while continua:
-								pergunta = input('Deseja continuar? ')
-							
-								if pergunta == 'sim':
-									continua = True
-									print('Então continua')
-								elif pergunta == 'não':
-									continua = False
-									print('Chega')
-								else:
-									continua = True
-									print('Que?!?')
-						</code></pre>
-					</section>
-				</section>				
-				
-				<section data-markdown>
-					<textarea data-template>
+                        * String (`str`)
+                            * `'Luffy'`, `'Marcelo Belli'`, `'42'`
+                        * Booleanos (`bool`)
+                            * `True`, `False`
+                        * Listas (`list`)
+                            * `[1, 2, 3]`
+                            * `['Marcelo', 'Belli', 'Luffy']`
+                            * `[1, 'Belli', 3.14, '42']`
+                    </textarea>
+                </section>
+                <section>
+                    <section>
+                        <h3>Tipagem Dinâmica</h3>
+                        <h3>&</h3>
+                        <h3>Tipagem Forte</h3>
+                    </section>
+                    <section>
+                        <h3>Tipagem Dinâmica</h3>
+                        <pre><code class="python" data-trim data-noescape>
+                            >>> a = 'Marcelo'
+                            >>> a
+                            'Marcelo'
+                            >>> a = 42
+                            >>> a
+                            42
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Tipagem Forte</h3>
+                        <pre><code class="python" data-trim data-noescape>
+                            >>> a = '42'
+                            >>> a + 42
+                            Traceback (most recent call last):
+                                File "<stdin>", line 1, in <module>
+                            TypeError: must be str, not i
+                        </code></pre>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                        <textarea data-template>
+                            ### Operadores Lógicos
+                            
+                            Resultam em `True` ou `False`
+                        </textarea>
+                    </section>
+                    <section data-markdown>
+                        <textarea data-template>
+                            ### Operadores Lógicos
+    
+                            | Sinal | Operador       | Exemplo   | Resultado |
+                            |:-----:|:--------------:|:---------:|:---------:|
+                            | <     | Menor          |`4 < 5`    | `True` <!-- .element: class="fragment" -->   | 
+                            | <=    | Menor ou Igual |`5 <= 5`   | `True` <!-- .element: class="fragment" -->   |
+                            | >     | Maior          |`5 > 5`    | `False` <!-- .element: class="fragment" -->  | 
+                            | >=    | Maior ou Igual |`5 >= 5`   | `True`  <!-- .element: class="fragment" -->  | 
+                            | ==    | Igual          |`5 == '5'` | `False` <!-- .element: class="fragment" -->  | 
+                            | !=    | Diferente      |`5 != '5'` | `True`  <!-- .element: class="fragment" -->  | 
+                        </textarea>
+                    </section>
+                    <section data-markdown>
+                        <textarea data-template>
+                            ### Expressões Lógicas
+    
+                            | Sinal | Operador | Exemplo        | Resultado |
+                            |:-----:|:--------:|:--------------:|:---------:|
+                            | and   | E        |`True and True` | `True` <!-- .element: class="fragment" -->   |
+                            | or    | Ou       |`True or False` | `True` <!-- .element: class="fragment" -->   |
+                            | not   | Negação  |`not True`      | `False` <!-- .element: class="fragment" -->  |
+                        </textarea>
+                    </section>
+                    <section data-markdown>
+                        <textarea data-template>
+                            ### + Exemplos
+                            
+                            | Exemplo           | Resultado |
+                            |:-----------------:|:---------:|
+                            |`6 > 7`            | `False` <!-- .element: class="fragment" -->   |
+                            |`6 < 7`            | `True` <!-- .element: class="fragment" -->    |
+                            |`4 != '4'`         | `True` <!-- .element: class="fragment" -->    |
+                            |`4 == 4`           | `True` <!-- .element: class="fragment" -->    |
+                            |`6 > 7 and 4 <= 5` | `False` <!-- .element: class="fragment" -->   |
+                            |`6 > 7 or 4 <= 5`  | `True` <!-- .element: class="fragment" -->    |
+                            |`not 6 > 7`        | `True` <!-- .element: class="fragment" -->    |
+                        </textarea>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h3>Estruturas de Controle</h3>
+                        <pre><code class="python" data-trim data-noescape>
+                            if condicao1:
+                                comando1
+                            elif condicao2:
+                                comando2
+                            else:
+                                comando3
+                        </code></pre>
+                    </section>
+                    <section data-markdown>
+                        <textarea data-template>
+                            ### Estruturas de Controle
+    
+                            * if <!-- .element: class="fragment" -->
+                            * else <!-- .element: class="fragment" -->
+                            * elif <!-- .element: class="fragment" -->		
+                        </textarea>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                        <textarea data-template>
+                            ### Listas
+                            * `list()`ou `[]`
+                                * `append()`
+                                * `insert()`
+                                * `pop()`
+                                * `remove()`
+                        </textarea>
+                    </section>
+                    <section>
+                        <h3>Listas</h3>
+                        <p>Instanciar uma lista</p>
+                        <pre><code class="python" data-trim data-noescape>
+                            >>> l = []
+                            >>> l = list()
+                            >>> l = [42, 'Marcelo']
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Listas</h3>
+                        <p>Index</p>
+                        <pre><code class="python" data-trim data-noescape>
+                            >>> l = [42, 'Marcelo', 3.14, 'Monty Python']
+                            >>> l[0]
+                            42
+                            >>> l[1]
+                            'Marcelo'
+                            >>> l[2]
+                            3.14
+                            >>> l[3]
+                            'Monty Python'
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Listas</h3>
+                        <code>append()</code>
+                        <pre><code class="python" data-trim data-noescape>
+                            >>> l = []
+                            >>> l.append(42)
+                            >>> l
+                            [42]
+                            >>> l.append('Monty Python')
+                            >>> l
+                            [42, 'Monty Python']
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Listas</h3>
+                        <code>insert()</code>
+                        <pre><code class="python" data-trim data-noescape>
+                            >>> l
+                            [42, 'Monty Python', 'Marcelo', '3.14']
+                            >>> l.insert(1, 'Brian')
+                            >>> l
+                            [42, 'Brian', 'Monty Python', 'Marcelo', '3.14']
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Listas</h3>
+                        <code>pop()</code>
+                        <pre><code class="python" data-trim data-noescape>
+                            >>> l
+                            [42, 'Monty Python', 'Marcelo', '3.14']
+                            >>> l.pop()
+                            '3.14'
+                            >>> l
+                            [42, 'Brian', 'Monty Python', 'Marcelo']
+                            >>> l.pop()
+                            'Marcelo'
+                            >>> l
+                            [42, 'Brian', 'Monty Python']
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Listas</h3>
+                        <code>remove()</code>
+                        <pre><code class="python" data-trim data-noescape>
+                            >>> l
+                            [42, 'Monty Python', 'Marcelo', '3.14', 42]
+                            >>> l.remove('Monty Python')
+                            >>> l
+                            [42, 'Marcelo', '3.14', 42]
+                            >>> l.remove(42)
+                            >>> l
+                            ['Marcelo', '3.14', 42]
+                        </code></pre>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                        <textarea data-template>
+                            ### Estruturas de Repetição
+    
+                            `for`
+    
+                            Usado quando se quer iterar sobre um bloco de código um número determinado de vezes.
+    
+                        </textarea>
+                    </section>
+                    <section>
+                        <h3>Estruturas de Repetição</h3>
+                        <code>for</code>
+                        <pre><code class="python" data-trim data-noescape>
+                            >>> l
+                            [42, 'Monty Python', 'Marcelo', '3.14']
+                            >>> for item in l:
+                            ...     print(item)
+                            ...
+                            42
+                            Monty Python
+                            Marcelo
+                            3.14
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Estruturas de Repetição</h3>
+                        <code>range()</code>
+                        <pre><code class="python" data-trim data-noescape>
+                            >>> for n in range(0,5):
+                            ...     print(n)
+                            ...
+                            0
+                            1
+                            2
+                            3
+                            4
+                        </code></pre>
+                    </section>
+                    <section data-markdown>
+                        <textarea data-template>
+                            ### Estruturas de Repetição
+    
+                            `while`
+    
+                            Usado quando queremos que o bloco de código seja repetido até que uma condição seja satisfeita.
+    
+                        </textarea>
+                    </section>
+                    <section>
+                        <h3>Estruturas de Repetição</h3>
+                        <code>while</code>
+                        <pre><code class="python" data-trim data-noescape>
+                            continua = True
+                            
+                            while continua:
+                                pergunta = input('Deseja continuar? ')
+                            
+                                if pergunta == 'sim':
+                                    continua = True
+                                    print('Então continua')
+                                elif pergunta == 'não':
+                                    continua = False
+                                    print('Chega')
+                                else:
+                                    continua = True
+                                    print('Que?!?')
+                        </code></pre>
+                    </section>
+                </section>				
+                <section>
+                    <section data-markdown>
+                        <textarea data-template>
+                            ### Funções
 
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
+                            Sequência de instruções que executa uma operação de computação
+    
+                        </textarea>
+                    </section>
+                    <section>
+                        <p>Eu quero...</p>
+                        <p class="fragment">Um programa que mostre na tela os números entre 1 e 5</p>
+                        <pre class="fragment"><code class="python" data-trim data-noescape>
+                            for n in range(1, 6):
+                                print(n)
+                        </code></pre>
+                    </section>
+                    <section>
+                        <p>Eu quero...</p>
+                        <p class="fragment">Um programa que mostre na tela os números entre 5 e 10</p>
+                        <pre class="fragment"><code class="python" data-trim data-noescape>
+                            for n in range(5, 11):
+                                print(n)
+                        </code></pre>
+                    </section>
+                    <section>
+                        <p>Eu quero...</p>
+                        <p class="fragment">Um programa que mostre na tela os números entre 1 e 100</p>
+                    </section>
+                    <section data-markdown>
+                        <textarea data-template>
+                            Pô...
 
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
+                            Não dá pra facilitar? <!-- .element: class="fragment" -->
+    
+                        </textarea>
+                    </section>
+                    <section data-markdown>
+                        <textarea data-template>
 
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
+                            ### Dá Sim!
+    
+                        </textarea>
+                    </section>
+                    <section>
+                        <pre><code class="python" data-trim data-noescape>
+                            def nome_da_funcao(lista_de_parametros):
+                                comandos
+                            
+                            nome_da_funcao(params)
+                        </code></pre>
+                    </section>
+                    <section>
+                        <p>Exemplos</p>
+                        <pre><code class="python" data-trim data-noescape>
+                            >>> def hello_world():
+                            ...     print('hello world!')
+                            ...
+                            >>> hello_world()
+                            hello world!
+                        </code></pre>
+                    </section>
+                    <section>
+                        <p>Exemplos</p>
+                        <pre><code class="python" data-trim data-noescape>
+                            >>> def hello_world2(nome):
+                            ...     print('hello world ' + nome + '!')
+                            ...
+                            >>> hello_world2('Marcelo')
+                            hello world Marcelo!
+                        </code></pre>
+                    </section>
+                    <section>
+                        <p>Exemplos</p>
+                        <pre><code class="python" data-trim data-noescape>
+                            >>> def soma(a, b):
+                            ...     print(a + b)
+                            ...
+                            >>> soma(1,2)
+                            3
+                        </code></pre>
+                    </section>
+                    <section data-markdown>
+                        <textarea data-template>
+                            Voltando <!-- .element: class="fragment" -->
+                        </textarea>
+                    </section>
+                    <section>
+                        <p>Eu quero...</p>
+                        <p class="fragment">Um programa que mostre na tela os números entre 1 e 5</p>
+                        <p class="fragment">Um programa que mostre na tela os números entre 5 e 10</p>
+                        <p class="fragment">Um programa que mostre na tela os números entre 1 e 100</p>
+                    </section>
+                    <section>
+                        <pre class="fragment"><code class="python" data-trim data-noescape>
+                            >>> def numeros_entre(inicio, fim):
+                            ...    for numero in range(inicio, fim + 1):
+                            ...        print(numero)
+                        </code></pre>
+                    </section>
+                    <section>
+                        <pre class="fragment"><code class="python" data-trim data-noescape>
+                            >>> numeros_entre(1, 5)
+                            >>> numeros_entre(1, 10)
+                            >>> numeros_entre(1, 100)
+                        </code></pre>
+                    </section>
+                </section>
+                <section>
+                    <img src="./images/thats_all_folks.gif">
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ### Agradecimentos
 
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
+                        Fernando Masanori <!-- .element: class="fragment" -->
 
-					</textarea>
-				</section>
-			</div>
-		</div>
+                        Ramiro e ao Grupy PR <!-- .element: class="fragment" -->
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+                        Turicas <!-- .element: class="fragment" -->
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ### Referências
+
+                        * [O Fantástico Mundo de Python](http://turicas.info/slides/python/grupypr/#/)
+                        * [The Python Tutorial](https://docs.python.org/3/tutorial/)
+                        * [Curso Introdutório de Python]http://curso-intro-python.readthedocs.io/index.html()
+                        * [Learn Python Visually](http://pythonvisually.com/ebook/index.html#)
+                        * [https://t.me/grupy_pr](https://t.me/grupy_pr)
+
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ### Quer participar dessa comunidade nota 1000?
+
+                        * [https://t.me/grupy_pr](https://t.me/grupy_pr)
+                        * [https://www.meetup.com/pt-BR/GruPy-PR/](https://www.meetup.com/pt-BR/GruPy-PR/)
+
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        Não vá embora! <!-- .element: class="fragment" -->
+
+                        Sua opinião é muito importante! <!-- .element: class="fragment" -->
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        Fim :)
+                    </textarea>
+                </section>
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
 </html>
