@@ -335,17 +335,56 @@
 					</section>
 					<section>
 						<h3>Listas</h3>
-						<p>Index</p>
+						<code>append()</code>
 						<pre><code class="python" data-trim data-noescape>
-							>>> l = [42, 'Marcelo', 3.14, 'Monty Python']
-							>>> l[0]
-							42
-							>>> l[1]
+							>>> l = []
+							>>> l.append(42)
+							>>> l
+							[42]
+							>>> l.append('Monty Python')
+							>>> l
+							[42, 'Monty Python']
+						</code></pre>
+					</section>
+					<section>
+						<h3>Listas</h3>
+						<code>insert()</code>
+						<pre><code class="python" data-trim data-noescape>
+							>>> l
+							[42, 'Monty Python', 'Marcelo', '3.14']
+							>>> l.insert(1, 'Brian')
+							>>> l
+							[42, 'Brian', 'Monty Python', 'Marcelo', '3.14']
+						</code></pre>
+					</section>
+					<section>
+						<h3>Listas</h3>
+						<code>pop()</code>
+						<pre><code class="python" data-trim data-noescape>
+							>>> l
+							[42, 'Monty Python', 'Marcelo', '3.14']
+							>>> l.pop()
+							'3.14'
+							>>> l
+							[42, 'Brian', 'Monty Python', 'Marcelo']
+							>>> l.pop()
 							'Marcelo'
-							>>> l[2]
-							3.14
-							>>> l[3]
-							'Monty Python'
+							>>> l
+							[42, 'Brian', 'Monty Python']
+						</code></pre>
+					</section>
+					<section>
+						<h3>Listas</h3>
+						<code>remove()</code>
+						<pre><code class="python" data-trim data-noescape>
+							>>> l
+							[42, 'Monty Python', 'Marcelo', '3.14', 42]
+							>>> l.remove('Monty Python')
+							>>> l
+							[42, 'Marcelo', '3.14', 42]
+							>>> l.remove(42)
+							>>> l
+							['Marcelo', '3.14', 42]
 						</code></pre>
 					</section>
 				</section>
@@ -364,6 +403,21 @@
 						<h3>Estruturas de Repetição</h3>
 						<code>for</code>
 						<pre><code class="python" data-trim data-noescape>
+							>>> l
+							[42, 'Monty Python', 'Marcelo', '3.14']
+							>>> for item in l:
+							...     print(item)
+							...
+							42
+							Monty Python
+							Marcelo
+							3.14
+						</code></pre>
+					</section>
+					<section>
+						<h3>Estruturas de Repetição</h3>
+						<code>range()</code>
+						<pre><code class="python" data-trim data-noescape>
 							>>> for n in range(0,5):
 							...     print(n)
 							...
@@ -372,6 +426,36 @@
 							2
 							3
 							4
+						</code></pre>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### Estruturas de Repetição
+	
+							`while`
+	
+							Usado quando queremos que o bloco de código seja repetido até que uma condição seja satisfeita.
+	
+						</textarea>
+					</section>
+					<section>
+						<h3>Estruturas de Repetição</h3>
+						<code>while</code>
+						<pre><code class="python" data-trim data-noescape>
+							continua = True
+							
+							while continua:
+								pergunta = input('Deseja continuar? ')
+							
+								if pergunta == 'sim':
+									continua = True
+									print('Então continua')
+								elif pergunta == 'não':
+									continua = False
+									print('Chega')
+								else:
+									continua = True
+									print('Que?!?')
 						</code></pre>
 					</section>
 				</section>				
